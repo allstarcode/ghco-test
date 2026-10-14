@@ -4,18 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>NY Jets Fan Site</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <h1 class="brand">NY Jets Fan Site</h1>
+    <div class="container header-inner">
+      <div class="brand-wrap">
+        <img src="/logo.svg" alt="NY Jets" class="logo">
+        <h1 class="brand">NY Jets Fan Site</h1>
+      </div>
       <nav>
         <a href="#about">About</a>
         <a href="#news">News</a>
         <a href="#schedule">Schedule</a>
-        <a href="#contact">Contact</a>
       </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
     </div>
   </header>
 
@@ -55,22 +60,6 @@
         <li>Week 2 — @ Opponent B</li>
         <li>Week 3 — vs. Opponent C</li>
       </ul>
-    </section>
-
-    <section id="contact" class="container section">
-      <h3>Contact</h3>
-      <p>Questions or suggestions? Email: <a href="mailto:info@example.com">info@example.com</a></p>
-      <form id="contact-form">
-        <label>
-          Your name
-          <input type="text" name="name" required>
-        </label>
-        <label>
-          Message
-          <textarea name="message" required></textarea>
-        </label>
-        <button type="submit">Send</button>
-      </form>
     </section>
   </main>
 
